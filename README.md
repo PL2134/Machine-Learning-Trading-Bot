@@ -8,7 +8,8 @@ In this project, I have created an algorithmic trading bot that learns and adapt
     Firstly, I have establish a baseline performance for the trading algorithm. The perfomance of the trading algorithms are decided based on the accuracy of the trading predictions that each makes and the resulting cumulative strategy returns.
 
     - Accuracy: The accuracy of the baseline trading algorithm is 0.55. Which is just a little bit better than random guessing. It requires further tuning. We also need to consider the strategy used and the strategy returns to evaluate its overall performance.
-    ![Alt text](Images/baseline_classification_report.png)
+
+        ![Alt text](Images/baseline_classification_report.png)
     - Cummulative Strategy Returns: The cummulative actual returns based on market fluctuation is 1.386976, but the cummulative strategy returns is only 1.517607, which is slightly better than the actual returns.
     ![Alt text](Images/baseline_cummulative_returns.png)
     - Actual Returns vs Strategy Returns: As shown in the plot below, the strategy returns ended up higher than the actual returns based on the market fluctuations.
@@ -18,7 +19,8 @@ In this project, I have created an algorithmic trading bot that learns and adapt
 
     As stated above, the baseline trading algorithm still required further tuning, thus I attempted to improve the performance of the trading algorithm by changing the period for training data from three months to six months. 
     - Accuracy: The accuracy has increased slightly from 0.55 to 0.56 after changing the period for training data from three months to six months. 
-    ![Alt text](Images/6_months_training_classification_report.png)
+
+        ![Alt text](Images/6_months_training_classification_report.png)
     - Cummulative Strategy Returns: The cummulative actual returns based on market fluctuation is 1.560429, but the cummulative strategy returns is 1.841664, which is significantly better than the actual returns.
     ![Alt text](Images/6_months_training_cummulative_returns.png)
     - Actual Returns vs Strategy Returns: As shown in the plot below, the strategy returns ended up way higher than the actual returns based on the market fluctuations.
@@ -30,7 +32,8 @@ In this project, I have created an algorithmic trading bot that learns and adapt
 
     In addition, I have also attempted to improve the overall performance of the trading algorithm by decreasing the `long_window` for `SMA_Slow` from 100 to 50, other parameters were kept the same to the baseline trading algorithm.
     - Accuracy: The accuracy has decreased slightly from 0.55 to 0.54 after decreasing the `long_window` for `SMA_Slow` from 100 to 50.
-    ![Alt text](Images/50_days_SMA_slow_classification_report.png)
+
+        ![Alt text](Images/50_days_SMA_slow_classification_report.png)
     - Cummulative Strategy Returns: The cummulative actual returns based on market fluctuation is 1.308806, but the cummulative strategy returns is 1.320242, which is slightly better than the actual returns.
     ![Alt text](Images/50_days_SMA_slow_cummulative_returns.png)
     - Actual Returns vs Strategy Returns: As shown in the plot below, the strategy returns ended up slightly higher than the actual returns based on the market fluctuations.
@@ -42,7 +45,8 @@ In this project, I have created an algorithmic trading bot that learns and adapt
 
     Other than the SVC classifier model I used above, I have also created another model using `RandomForestClassifier` in an attempt to produce better overall performance.
     - Accuracy: The accuracy of the Random Forest trading algorithm is 0.52. Which is much worse than the baseline trading algorithm. 
-    ![Alt text](Images/random_forest_classification_report.png)
+
+        ![Alt text](Images/random_forest_classification_report.png)
     - Cummulative Strategy Returns: The cummulative actual returns based on market fluctuation is 1.386976, but the cummulative strategy returns is 1.043724, which is much worse than the actual returns.
     ![Alt text](Images/random_forest_cummulative_returns.png)
     - Actual Returns vs Strategy Returns: As shown in the plot below, the strategy returns ended up much lower than the actual returns based on the market fluctuations.
